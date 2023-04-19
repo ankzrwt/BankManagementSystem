@@ -5,7 +5,7 @@ from Database.bank import accounts,customers
 class AccountService:
 
     def validInput(self,name,phone)->bool:
-        if len(name)<3:
+        if len(name)<4:
             print("invalid name")
             return False
         if len(phone)!=10:
